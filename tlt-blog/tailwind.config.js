@@ -5,7 +5,11 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        roboto:['"Roboto Condensed"','sans-serif','Time New Rowman'] // khai báo font 
+      }
+    },
   },
   plugins: [],
 }
