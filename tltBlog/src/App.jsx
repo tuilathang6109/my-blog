@@ -1,10 +1,14 @@
-// import { useState } from 'react'
 import './App.css'
 
+import { useState } from 'react'
+
+import LeftSife from './pages/leftSide/leftSide';
+import RightSife  from './pages/rightSide/rightSide';
 function App() {
   return (
-        <h1 className="text-9xl font-bold underline ">
-          Building...
+        <h1 id='wrap' className='flex' >
+          <LeftSife/>
+          <RightSife/>
         </h1>
   )
 }
