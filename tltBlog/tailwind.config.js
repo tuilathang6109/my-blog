@@ -13,7 +13,7 @@ export default {
       colors : {
         BgGrey : '#f2f3f7',
         textBlack :'rgba(0, 0, 0, 0.7);'
-      }
+      },
     },
   },
   plugins: [],
