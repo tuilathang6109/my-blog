@@ -1,3 +1,7 @@
-#root {
-  text-align: center;
-}
+@tailwind base ;
+
+@layer base {
+  body {
+    @apply font-Qicksand
+    }
+} ;

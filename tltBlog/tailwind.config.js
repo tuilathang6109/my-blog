@@ -5,7 +5,16 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily : {
+        Qicksand : ["Qicksand","arial","sans","selrif"] ,
+        PlayfairDisplay : ['"Playfair Display"',"arial","sans"]
+      },
+      colors : {
+        BgGrey : '#f2f3f7',
+        textBlack :'rgba(0, 0, 0, 0.7);'
+      }
+    },
   },
   plugins: [],
-}
+} 
