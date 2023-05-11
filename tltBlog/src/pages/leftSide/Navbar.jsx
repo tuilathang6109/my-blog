@@ -1,4 +1,4 @@
-import GruopClass from "./groupClass"
+import PcCss from "./reponsive/PcCss"
 
 import {AiOutlineExclamationCircle, AiOutlineHome, AiOutlineCustomerService, AiOutlineCheckCircle,AiOutlineHourglass, AiOutlineLaptop, AiOutlineContacts} from "react-icons/ai"
 import {MdCastForEducation} from "react-icons/md"
@@ -16,7 +16,7 @@ const items = [
 ]
 function NavItems ({item}) {
     return (
-        <li className={`py-3 flex justify-center ${GruopClass.hover}}`} >{item.label} <i className="pl-1 text-sm">{item.icon}</i></li>
+        <li className={`py-3 flex justify-center ${PcCss.hover}}`} >{item.label} <i className="pl-1 text-sm">{item.icon}</i></li>
     )
 }
 function NavBar () {

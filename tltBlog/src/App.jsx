@@ -7,13 +7,13 @@ import RightSife  from './pages/rightSide/rightSide';
 function App() {
   return (
     <>
-      <div id='wrap' className=' flex sm:hidden s:hidden'>
+      <div id='wrap' className='flex'>
             <LeftSife/>
             <RightSife/>
           </div>
-          <div className='xl:hidden lg:hidden md:hidden'>
+          {/* <div className='xl:hidden lg:hidden md:hidden'>
             The mobile interface is being built...
-          </div>
+          </div> */}
     </>
   )
 }
