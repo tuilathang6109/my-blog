@@ -6,10 +6,15 @@ import LeftSife from './pages/leftSide/leftSide';
 import RightSife  from './pages/rightSide/rightSide';
 function App() {
   return (
-        <h1 id='wrap' className='flex' >
-          <LeftSife/>
-          <RightSife/>
-        </h1>
+    <>
+      <div id='wrap' className=' flex sm:hidden s:hidden'>
+            <LeftSife/>
+            <RightSife/>
+          </div>
+          <div className='xl:hidden lg:hidden md:hidden'>
+            The mobile interface is being built...
+          </div>
+    </>
   )
 }
 
