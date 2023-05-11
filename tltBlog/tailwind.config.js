@@ -8,7 +8,8 @@ export default {
     extend: {
       fontFamily : {
         Qicksand : ["Qicksand","arial","sans","selrif"] ,
-        PlayfairDisplay : ['"Playfair Display"',"arial","sans"]
+        PlayfairDisplay : ['"Playfair Display"',"arial","sans"],
+        Kanit : ["Kanit","arial","sans"]
       },
       colors : {
         BgGrey : '#f2f3f7',

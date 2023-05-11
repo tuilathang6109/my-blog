@@ -1,23 +1,22 @@
 import GruopClass from "./groupClass"
 
-import {AiOutlineExclamationCircle} from "react-icons/ai"
-import {AiOutlineHome} from "react-icons/ai"
-
-
+import {AiOutlineExclamationCircle, AiOutlineHome, AiOutlineCustomerService, AiOutlineCheckCircle,AiOutlineHourglass, AiOutlineLaptop, AiOutlineContacts} from "react-icons/ai"
+import {MdCastForEducation} from "react-icons/md"
+import {TbBrandBlogger} from "react-icons/tb"
 const items = [
     {label: "HOME",icon: <AiOutlineHome/>},
     {label: "ABOUT",icon:<AiOutlineExclamationCircle/>},
-    {label: "SERVICES"},
-    {label: "SKILLLS"},
-    {label: "EDUCATION"},
-    {label: "EXPERIENCE"},
-    {label: "WORK"},
-    {label: "BLOG"},
-    {label: "CONTACT"},
+    {label: "SERVICES",icon:<AiOutlineCustomerService/>},
+    {label: "SKILLLS",icon:<AiOutlineCheckCircle/>},
+    {label: "EDUCATION",icon:<MdCastForEducation/>},
+    {label: "EXPERIENCE",icon:<AiOutlineHourglass/>},
+    {label: "WORK",icon:<AiOutlineLaptop/>},
+    {label: "BLOG",icon:<TbBrandBlogger/>},
+    {label: "CONTACT",icon:<AiOutlineContacts/>},
 ]
 function NavItems ({item}) {
     return (
-        <li className={`py-2.5 flex justify-center ${GruopClass.hover}}`} >{item.label} <i className="pl-1 text-sm">{item.icon}</i></li>
+        <li className={`py-3 flex justify-center ${GruopClass.hover}}`} >{item.label} <i className="pl-1 text-sm">{item.icon}</i></li>
     )
 }
 function NavBar () {
