@@ -10,7 +10,7 @@ function LeftSife () {
             <div className="h-screen flex flex-col items-center bg-BgGrey py-11  relative">
                 <div id="myProfile" className="font-PlayfairDisplay text-center flex flex-col items-center border-b-2">
                     <img src={myAvatar} alt="" className={`drop-shadow-2xl w-36 h-36 rounded-full mx-16 mb-6 border-solid border-2 border-blue-500 ${GruopClass.hover}`}/>
-                    <h2 className="font-Kanit mb-3 text-xl font-bold ">TuilaThang</h2>
+                    <h2 className="font-Kanit mb-3 text-xl font-bold ">Vũ Thắng</h2>
                     <p className="mb-6 italic text-sm">"Design Your Life"</p>
                 </div>
                 <ul id="navBar" className="mt-6 font-Kanit font-bold text-sm text-textBlack text-center cursor-pointer">
