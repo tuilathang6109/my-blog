@@ -6,5 +6,4 @@ function RightSife () {
             </div>
     )
 }
-
 export default RightSife ;

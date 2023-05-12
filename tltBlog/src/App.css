@@ -13,7 +13,12 @@
   100% {
     transform: translateX(0);
   }
-}
-.animate-slide-in {
+};
+.animateSlideIn {
   animation: slideIn 0.5s ease-in-out;
+};
+@layer base {
+  .transparent {
+    -webkit-tap-highlight-color: transparent;
+  }
 }
