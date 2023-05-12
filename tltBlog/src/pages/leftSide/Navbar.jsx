@@ -1,4 +1,4 @@
-import PcCss from "./reponsive/PcCss"
+import PcCss from "./reponsiveLeftside/PcCss"
 
 import {AiOutlineExclamationCircle, AiOutlineHome, AiOutlineCustomerService, AiOutlineCheckCircle,AiOutlineHourglass, AiOutlineLaptop, AiOutlineContacts} from "react-icons/ai"
 import {MdCastForEducation} from "react-icons/md"
