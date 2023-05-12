@@ -9,14 +9,14 @@ import '../../App.css'
 function LeftSide () { 
     return (
         <>
-            <div className={`xl:${PcCss.leftSide} s:${MobileCss.leftSideMobile} lg:h-full animateSlideIn`}>
+            <div className={`xl:${PcCss.leftSide} lg:h-full`}>
                 <div id="myProfile" className={`${PcCss.profile.profileMain}`}>
                     <img src={myAvatar} alt="" className={`${PcCss.profile.profileImg} ${PcCss.hover}`}/>
                     <h2 className={`${PcCss.profile.profileName}`}>Vũ Thắng</h2>
                     <p className={`${PcCss.profile.profileSologan}`}>"Design Your Life"</p>
                 </div>
                 <ul id="navBar" className={`${PcCss.navigation.navBar} `}>
-                    <NavBar className/>
+                    <NavBar/>
                 </ul>
                 <div className={`${PcCss.footerSideBar.footerSb}`}>
                     <p>© Copyright 2023 </p>
