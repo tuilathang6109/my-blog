@@ -11,11 +11,10 @@ function App() {
             <LeftSife/>
             <RightSife/>
           </div>
-          <div className='xl:hidden lg:hidden md:hidden'>
+          <div className='xl:hidden lg:hidden md:hidden '>
             The mobile interface is being built...
           </div>
     </>
   )
 }
-
 export default App
