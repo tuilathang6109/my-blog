@@ -16,7 +16,7 @@ const items = [
 ]
 function NavItems ({item}) {
     return (
-        <li className={`py-3 flex justify-center ${PcCss.hover}}`} >{item.label} <i className="pl-1 text-sm">{item.icon}</i></li>
+        <li id={`${item.label}`} className={`py-3 flex justify-center ${PcCss.hover}}`} >{item.label} <i className="pl-1 text-sm">{item.icon}</i></li>
     )
 }
 function NavBar () {

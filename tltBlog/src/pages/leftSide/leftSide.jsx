@@ -12,7 +12,7 @@ import React, { useState } from 'react';
 function LeftSife () { 
     return (
         <>
-            <div className={`xl:${PcCss.leftSide} s:${MobileCss.leftSideMobile}`}>
+            <div className={`xl:${PcCss.leftSide} s:${MobileCss.leftSideMobile} lg:h-full md:h-full overflow-y-scroll`}>
                 <div id="myProfile" className={`${PcCss.profile.profileMain}`}>
                     <img src={myAvatar} alt="" className={`${PcCss.profile.profileImg} ${PcCss.hover}`}/>
                     <h2 className={`${PcCss.profile.profileName}`}>Vũ Thắng</h2>
@@ -21,6 +21,11 @@ function LeftSife () {
                 <ul id="navBar" className={`${PcCss.navigation.navBar}`}>
                     <NavBar/>
                 </ul>
+                <div className=" font-PlayfairDisplay text-xs text-center mt-44 opacity-60">
+                    <p>© Copyright ©2023 All rights reserved</p>
+                    <br />
+                    <p>Design by <a className="text-blue-700 underline" href="HOME">TuilaThang</a></p>
+                </div>
             </div>
         </>
     )
