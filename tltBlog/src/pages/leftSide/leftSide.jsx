@@ -6,11 +6,7 @@ import MobileCss from "./reponsiveLeftside/MobileCss";
 import NavBar from "./Navbar"
 import '../../App.css'
 
-import {AiOutlineMenuUnfold} from "react-icons/ai"
-
-import React, { useState } from 'react';
-
-function LeftSife () { 
+function LeftSide () { 
     return (
         <>
             <div className={`xl:${PcCss.leftSide} s:${MobileCss.leftSideMobile} lg:h-full animateSlideIn`}>
@@ -32,4 +28,4 @@ function LeftSife () {
     )
 }
 
-export default LeftSife ;
+export default LeftSide ;
