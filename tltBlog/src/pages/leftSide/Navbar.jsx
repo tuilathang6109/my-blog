@@ -7,7 +7,7 @@ const items = [
     {label: "HOME",icon: <AiOutlineHome/>},
     {label: "ABOUT",icon:<AiOutlineExclamationCircle/>},
     {label: "SERVICES",icon:<AiOutlineCustomerService/>},
-    {label: "SKILLLS",icon:<AiOutlineCheckCircle/>},
+    {label: "SKILLS",icon:<AiOutlineCheckCircle/>},
     {label: "EDUCATION",icon:<MdCastForEducation/>},
     {label: "EXPERIENCE",icon:<AiOutlineHourglass/>},
     {label: "WORK",icon:<AiOutlineLaptop/>},
@@ -16,7 +16,7 @@ const items = [
 ]
 function NavItems ({item}) {
     return (
-        <li id={`${item.label}`} className={`py-3 flex justify-center ${PcCss.hover}}`} >{item.label} <i className="pl-1 text-sm">{item.icon}</i></li>
+        <li id={`${item.label}`} className={`py-3 flex justify-center ${PcCss.hover}`} >{item.label} <i className="pl-1 text-sm font-medium">{item.icon}</i></li>
     )
 }
 function NavBar () {
