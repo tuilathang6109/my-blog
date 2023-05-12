@@ -1,7 +1,6 @@
 
 const PcCss = {
     hover:"hover:border-b-2 hover:scale-x-125 hover:scale-y-125 transition-all duration-300 ease-in-out hover:font-extrabold ",
-    lgNavbar :"active:border-b-2 active:scale-x-125 active:scale-y-125 transition-all duration-300 ease-in-out active:font-extrabold ",
     leftSide : "flex flex-col  h-screen items-center bg-BgGrey py-11",
     profile : {
         profileMain : "font-PlayfairDisplay text-center flex flex-col items-center border-b-2",
@@ -11,7 +10,7 @@ const PcCss = {
     },
     navigation : {
         navBar : "mt-6 font-Kanit font-bold text-sm text-textBlack text-center cursor-pointer font-medium transparent ",
-        navBarItem :"py-3 flex justify-center"
+        navBarItem :"py-3 flex justify-center items-center"
 
     },
     footerSideBar : {
@@ -19,5 +18,4 @@ const PcCss = {
         auther : "text-blue-700 underline"
     }
 }
-
 export default PcCss

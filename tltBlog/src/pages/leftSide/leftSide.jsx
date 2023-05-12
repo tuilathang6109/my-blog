@@ -6,21 +6,17 @@ import MobileCss from "./reponsiveLeftside/MobileCss";
 import NavBar from "./Navbar"
 import '../../App.css'
 
-import {AiOutlineMenuUnfold} from "react-icons/ai"
-
-import React, { useState } from 'react';
-
-function LeftSife () { 
+function LeftSide () { 
     return (
         <>
-            <div className={`xl:${PcCss.leftSide} s:${MobileCss.leftSideMobile} lg:h-full animateSlideIn`}>
+            <div className={`xl:${PcCss.leftSide} lg:h-full`}>
                 <div id="myProfile" className={`${PcCss.profile.profileMain}`}>
                     <img src={myAvatar} alt="" className={`${PcCss.profile.profileImg} ${PcCss.hover}`}/>
                     <h2 className={`${PcCss.profile.profileName}`}>Vũ Thắng</h2>
                     <p className={`${PcCss.profile.profileSologan}`}>"Design Your Life"</p>
                 </div>
                 <ul id="navBar" className={`${PcCss.navigation.navBar} `}>
-                    <NavBar className/>
+                    <NavBar/>
                 </ul>
                 <div className={`${PcCss.footerSideBar.footerSb}`}>
                     <p>© Copyright 2023 </p>
@@ -32,4 +28,4 @@ function LeftSife () {
     )
 }
 
-export default LeftSife ;
+export default LeftSide ;
