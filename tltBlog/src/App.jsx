@@ -4,17 +4,15 @@ import { useState } from 'react'
 
 import LeftSide from './pages/leftSide/leftSide';
 import RightSide  from './pages/rightSide/rightSide';
+import "./index.css"
 function App() {
   return (
     <>
-      <div id='wrap' className='flex sm:hidden s:hidden'>
+      <div id='wrap' className='flex'>
             <LeftSide/>
             <RightSide/>
-          </div>
-          <div className='xl:hidden lg:hidden md:hidden '>
-            The mobile interface is being built...
           </div>
     </>
   )
 }
-export default App
+export default App  

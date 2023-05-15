@@ -1,4 +1,3 @@
-import PcCss from "./reponsiveLeftside/PcCss"
 
 import {AiOutlineExclamationCircle, AiOutlineHome, AiOutlineCustomerService, AiOutlineCheckCircle,AiOutlineHourglass, AiOutlineLaptop, AiOutlineContacts} from "react-icons/ai"
 import {MdCastForEducation} from "react-icons/md"
@@ -16,7 +15,7 @@ const items = [
 ]
 function NavItems ({item}) {
     return (
-        <li id={`${item.label}`} className={`${PcCss.navigation.navBarItem} xl:${PcCss.hover} lg:${PcCss.lgNavbar}`} >{item.label} <i className="pl-1 text-sm font-medium">{item.icon}</i></li>
+        <li className="navbarItems hover ">{item.label} <i className="font-bold pl-1.5">{item.icon}</i></li>
     )
 }
 function NavBar () {

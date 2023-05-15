@@ -1,10 +1,54 @@
 @tailwind base;
+@tailwind components;
 
 @layer base {
   body {
     @apply font-Qicksand
     }
 } ;
+
+/*left side */
+@layer components {
+  .hover:hover {
+    @apply border-b-2 scale-x-125 scale-y-125 transition-all duration-300 ease-in-out font-extrabold ;
+  }
+  /* LEFT SIDE------------------ */
+  .leftSide {
+    @apply  xl:flex lg:flex md:flex flex-col  h-full items-center bg-BgGrey my-10;
+  }
+  /* PROFILE----------- */
+  .profile {
+    @apply font-PlayfairDisplay text-center flex flex-col items-center border-b-2 pb-6;
+  }
+    .profileImage{
+      @apply drop-shadow-2xl w-36 h-36 rounded-full mx-16 mb-6 border-solid border-2 hover:border-blue-500 cursor-pointer  border-gray-300;
+    }
+    .profileName {
+      @apply font-Kanit mb-3 text-xl font-bold;
+    }
+    .profileSologan{
+      @apply italic text-sm;
+    }
+    /* NABVIGATION BAR-------  */
+  .navbar {
+    @apply mt-6 font-Kanit font-medium text-sm text-textBlack text-center cursor-pointer transparent ;
+  }
+    .navbarItems{
+      @apply py-3 flex justify-center items-center ;
+    }
+    /*FOOTER NAVBAR--------- */
+  .footerSb {
+    @apply font-PlayfairDisplay text-xs text-center mt-40 opacity-60;
+  }
+  .footerAuther {
+    @apply text-blue-700 underline
+  }
+}
+/* right side */
+
+@layer components {
+  
+}
 
 @keyframes slideIn {
   0% {
