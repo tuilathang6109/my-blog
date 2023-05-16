@@ -8,19 +8,19 @@ import {AiOutlineExclamationCircle, AiOutlineHome, AiOutlineCustomerService, AiO
 import {MdCastForEducation} from "react-icons/md"
 import {TbBrandBlogger} from "react-icons/tb"
 const items = [
-    {label: "HOME",icon: <AiOutlineHome/>},
-    {label: "ABOUT",icon:<AiOutlineExclamationCircle/>},
-    {label: "SERVICES",icon:<AiOutlineCustomerService/>},
-    {label: "SKILLS",icon:<AiOutlineCheckCircle/>},
-    {label: "EDUCATION",icon:<MdCastForEducation/>},
-    {label: "EXPERIENCE",icon:<AiOutlineHourglass/>},
-    {label: "WORK",icon:<AiOutlineLaptop/>},
-    {label: "BLOG",icon:<TbBrandBlogger/>},
-    {label: "CONTACT",icon:<AiOutlineContacts/>},
+    {label: "home",icon: <AiOutlineHome/>},
+    {label: "about",icon:<AiOutlineExclamationCircle/>},
+    {label: "services",icon:<AiOutlineCustomerService/>},
+    {label: "skills",icon:<AiOutlineCheckCircle/>},
+    {label: "education",icon:<MdCastForEducation/>},
+    {label: "experience",icon:<AiOutlineHourglass/>},
+    {label: "work",icon:<AiOutlineLaptop/>},
+    {label: "blog",icon:<TbBrandBlogger/>},
+    {label: "contact",icon:<AiOutlineContacts/>},
 ]
 function NavItems ({item}) {
     return (
-        <li className="navbarItems hover ">{item.label} <i className="font-bold pl-1.5">{item.icon}</i></li>
+        <li className="navbarItems hover "><a href={`#${item.label}`}>{item.label}</a><i className="font-bold pl-1.5">{item.icon}</i></li>
     )
 }
 function NavBar () {
@@ -35,9 +35,6 @@ function LeftSide () {
     const toggleLeftSide = () => {
     setLeftSideVisible(!isLeftSideVisible);
 
-    // const handleNavItemClicked = () => {
-    //     setLeftSideVisible(false);
-    //   };
   };
     return (
         <>
@@ -52,7 +49,7 @@ function LeftSide () {
                     <NavBar/>
                 </ul>
                 <div className="footerSb">
-                    <p>© Copyright 2023 </p>
+                    <p>© Copyright {new Date().getFullYear()}</p>
                     <br/>
                     <p>Design by <a className="footerAuther" href="HOME">TuilaThang</a></p>
                 </div>
