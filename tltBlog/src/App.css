@@ -13,12 +13,15 @@
     @apply border-b-2 scale-x-125 scale-y-125 transition-all duration-300 ease-in-out font-extrabold ;
   }
   /* LEFT SIDE------------------ */
-  .leftSide {
-    @apply  xl:flex lg:flex md:flex flex-col  h-full items-center bg-BgGrey my-10;
+  .iconMenu {
+    @apply cursor-pointer w-full bg-slate-300 text-[48px] z-10  relative
+  }
+  .left-side {
+    @apply flex flex-col absolute top-0 h-auto md:h-full items-center bg-BgGrey md:w-full sm:w-full s:w-full animate-slideIn 
   }
   /* PROFILE----------- */
   .profile {
-    @apply font-PlayfairDisplay text-center flex flex-col items-center border-b-2 pb-6;
+    @apply font-PlayfairDisplay text-center flex flex-col items-center border-b-2 py-12;
   }
     .profileImage{
       @apply drop-shadow-2xl w-36 h-36 rounded-full mx-16 mb-6 border-solid border-2 hover:border-blue-500 cursor-pointer  border-gray-300;
@@ -50,17 +53,6 @@
   
 }
 
-@keyframes slideIn {
-  0% {
-    transform: translateX(-100%);
-  }
-  100% {
-    transform: translateX(0);
-  }
-};
-.animateSlideIn {
-  animation: slideIn 0.5s ease-in-out;
-};
 @layer base {
   .transparent {
     -webkit-tap-highlight-color: transparent;

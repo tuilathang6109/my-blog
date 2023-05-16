@@ -22,7 +22,21 @@ export default {
         BgGrey : '#f2f3f7',
         textBlack :'rgba(0, 0, 0, 0.7);'
       },
+      keyframes: {
+        slideIn: {
+          '0%': {
+            transform: 'translateX(-100%)',
+          },
+          '100%': {
+            transform: 'translateX(0)',
+          },
+        },
+      },
+      animation: {
+        slideIn: 'slideIn 0.5s ease-in-out',
+      },
     },
   },
-  plugins: [],
+  plugins: [
+],
 } 
