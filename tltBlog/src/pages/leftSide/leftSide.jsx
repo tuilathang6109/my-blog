@@ -42,7 +42,7 @@ function LeftSide () {
     return (
         <>
             <i id='iconMenu' className='iconMenu xl:hidden lg:hidden'><AiOutlineMenu onClick={toggleLeftSide}/></i>
-            <div className={`left-side ${!isLeftSideVisible ? 'sm:hidden s:hidden md:hidden' : ''}`}>
+            <div className={`left-side ${!isLeftSideVisible ? 'sm:hidden s:hidden md:hidden' : ''}`} >
                 <div id="myProfile" className="profile">
                     <img src={myAvatar} alt="" className="profileImage hover"/>
                     <h2 className="profileName">Vũ Thắng</h2>
