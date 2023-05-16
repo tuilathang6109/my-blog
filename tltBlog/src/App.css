@@ -17,7 +17,7 @@
     @apply cursor-pointer w-full bg-slate-300 text-[48px] z-10  relative
   }
   .left-side {
-    @apply flex flex-col absolute top-0 h-auto md:h-full items-center bg-BgGrey md:w-full sm:w-full s:w-full animate-slideIn 
+    @apply flex flex-col absolute top-0 h-auto md:h-full items-center bg-BgGrey md:w-full sm:w-full s:w-full animate-slideIn transparent
   }
   /* PROFILE----------- */
   .profile {
@@ -34,7 +34,7 @@
     }
     /* NABVIGATION BAR-------  */
   .navbar {
-    @apply mt-6 font-Kanit font-medium text-sm text-textBlack text-center cursor-pointer transparent ;
+    @apply mt-6 font-Kanit font-medium text-sm text-textBlack text-center cursor-pointer ;
   }
     .navbarItems{
       @apply py-3 flex justify-center items-center ;
