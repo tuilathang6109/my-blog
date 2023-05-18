@@ -41,8 +41,8 @@ export default {
         },
       },
       animation: {
-        slideIn: 'slideIn 1s ease-in-out',
-        slideOut: 'slideOut 0.5s ease-out',
+        slideIn: 'slideIn 0.7s ease-in',
+        slideOut: 'slideOut 0.7s ease-out',
       },
     },
   },

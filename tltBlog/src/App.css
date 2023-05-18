@@ -17,7 +17,7 @@
     @apply cursor-pointer w-full text-[48px]  absolute z-20  transparent
   }
   .left-side {
-    @apply flex flex-col fixed z-10 top-0 h-auto md:h-full items-center bg-BgGrey md:w-full sm:w-full s:w-full animate-slideIn transparent 
+    @apply flex flex-col fixed z-10 top-0 h-auto md:h-full items-center bg-BgGrey md:w-full sm:w-full s:w-full transparent 
   }
   /* PROFILE----------- */
   .profile {

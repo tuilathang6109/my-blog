@@ -1,9 +1,10 @@
-import { useState } from 'react';
+import ReactDOM from 'react-dom';
 
-import {AiOutlineMenu} from 'react-icons/ai';
+import { useState, useEffect } from 'react';
 
 import myAvatar from "../../images/myAvatar.jpg";
 
+import {AiOutlineMenu, AiOutlineClose} from 'react-icons/ai';
 import {AiOutlineExclamationCircle, AiOutlineHome, AiOutlineCustomerService, AiOutlineCheckCircle,AiOutlineHourglass, AiOutlineLaptop, AiOutlineContacts} from "react-icons/ai"
 import {MdCastForEducation} from "react-icons/md"
 import {TbBrandBlogger} from "react-icons/tb"
@@ -30,18 +31,44 @@ function NavBar ({ toggleLeftSide }) {
 
 
 function LeftSide () { 
-    const leftSide = document.querySelector('.left-side');
-
     const [isLeftSideVisible, setLeftSideVisible] = useState(false);
 
     const toggleLeftSide = () => {
     setLeftSideVisible(!isLeftSideVisible);
-
-  };
+    };
+    // useEffect(() => {
+    //     const leftSideElement = document.querySelector('.left-side');
+    //     if (leftSideElement) {
+    //       if (isLeftSideVisible) {
+    //         leftSideElement.classList.remove('animate-slideOut');
+    //         leftSideElement.classList.add('animate-slideIn');
+    //       } else {
+    //         leftSideElement.classList.remove('animate-slideIn');
+    //         leftSideElement.classList.add('animate-slideOut');
+    //       }
+    //     }
+    //   }, [isLeftSideVisible]);
+    const toggleCloseIcon = () => {
+        const leftSideElement = document.querySelector('.left-side');
+        leftSideElement.classList.add('animate-slideOut');
+    }
     return (
         <>
-            <i id='iconMenu' className='iconMenu xl:hidden lg:hidden'><AiOutlineMenu onClick={toggleLeftSide}/></i>
-            <div className={`left-side ${!isLeftSideVisible ? 'sm:hidden s:hidden md:hidden' : ''}`} >
+            <i
+        id="iconMenu"
+        className={`iconMenu xl:hidden lg:hidden ${isLeftSideVisible ? 'hidden' : ''}`}
+        onClick={toggleLeftSide} 
+      >
+        <AiOutlineMenu/>
+      </i>
+      <i
+        id="iconClose"
+        className={`iconMenu xl:hidden lg:hidden ${!isLeftSideVisible ? 'hidden' :''}`}
+        onClick={toggleLeftSide}
+      >
+        <AiOutlineClose />
+      </i>
+      <div className={`left-side ${!isLeftSideVisible ? `sm:hidden s:hidden md:hidden` : 'animate-slideIn'}`}>
                 <div id="myProfile" className="profile">
                     <img src={myAvatar} alt="" className="profileImage hover"/>
                     <h2 className="profileName">Vũ Thắng</h2>
