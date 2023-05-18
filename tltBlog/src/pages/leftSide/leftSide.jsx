@@ -18,18 +18,20 @@ const items = [
     {label: "blog",icon:<TbBrandBlogger/>},
     {label: "contact",icon:<AiOutlineContacts/>},
 ]
-function NavItems ({item}) {
+function NavItems ({item, toggleLeftSide}) {
     return (
-        <li className="navbarItems hover "><a href={`#${item.label}`}>{item.label}</a><i className="font-bold pl-1.5">{item.icon}</i></li>
+        <li className="navbarItems hover "><a href={`#${item.label}`} onClick={toggleLeftSide}>{item.label}</a><i className="font-bold pl-1.5">{item.icon}</i></li>
     )
 }
-function NavBar () {
+function NavBar ({ toggleLeftSide }) {
     return (
-        (items.map((item, index) => <NavItems item={item} key={index} />))
+        (items.map((item, index) => <NavItems item={item} key={index} toggleLeftSide={toggleLeftSide}/>))
     )}
 
 
 function LeftSide () { 
+    const leftSide = document.querySelector('.left-side');
+
     const [isLeftSideVisible, setLeftSideVisible] = useState(false);
 
     const toggleLeftSide = () => {
@@ -46,7 +48,7 @@ function LeftSide () {
                     <p className="">"Design Your Life"</p>
                 </div>
                 <ul className="navbar ">
-                    <NavBar/>
+                    <NavBar toggleLeftSide={toggleLeftSide}/>
                 </ul>
                 <div className="footerSb">
                     <p>© Copyright {new Date().getFullYear()}</p>
