@@ -9,9 +9,9 @@ function App() {
   return (
     <>
       <div id='wrap' className='xl:flex lg:flex'>
-            <LeftSide/>
-            <RightSide/>
-          </div>
+        <LeftSide/>
+        <RightSide/>
+      </div>
     </>
   )
 }

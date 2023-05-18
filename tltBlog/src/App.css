@@ -14,10 +14,10 @@
   }
   /* LEFT SIDE------------------ */
   .iconMenu {
-    @apply cursor-pointer w-full bg-slate-300 text-[48px] z-10  relative transparent
+    @apply cursor-pointer w-full bg-slate-300 text-[48px] z-10  transparent
   }
   .left-side {
-    @apply flex flex-col absolute top-0 h-auto md:h-full items-center bg-BgGrey md:w-full sm:w-full s:w-full animate-slideIn transparent 
+    @apply flex flex-col fixed top-0 h-auto md:h-full items-center bg-BgGrey md:w-full sm:w-full s:w-full animate-slideIn transparent 
   }
   /* PROFILE----------- */
   .profile {
