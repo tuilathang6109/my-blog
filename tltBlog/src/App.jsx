@@ -8,13 +8,9 @@ import "./index.css"
 function App() {
   return (
     <>
-      <div id='wrap' className='xl:flex lg:flex'>
-        <div className=''>
+      <div id='wrap' className='flex'>
           <LeftSide/>
-        </div>
-        <div className=''>
           <RightSide/>
-        </div>
       </div>
     </>
   )
