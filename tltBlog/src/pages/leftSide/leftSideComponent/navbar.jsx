@@ -15,7 +15,7 @@ const items = [
 ]
 function NavItems ({item, toggleLeftSide}) {
     return (
-        <li className="navbarItems hover"><a href={`#${item.label}`} onClick={toggleLeftSide}>{item.label}</a><i className="font-bold pl-1.5">{item.icon}</i></li>
+        <li className="navbarItems hover"><a href={`/${item.label}`} onClick={toggleLeftSide}>{item.label}</a><i className="font-bold pl-1.5">{item.icon}</i></li>
     )
 }
 function NavBar ({ toggleLeftSide }) {
