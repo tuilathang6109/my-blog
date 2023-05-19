@@ -1,14 +1,14 @@
 import './App.css'
 
-import LeftSide from './pages/leftSide/leftSide';
-import RightSide  from './pages/rightSide/rightSide';
+import Sidebar from './pages/sidebar/Sidebar';
+import Content  from './pages/content/Content';
 import "./index.css"
 function App() {
   return (
     <>
-      <div id='wrap' className='flex'>
-          <LeftSide/>
-          <RightSide/>
+      <div id='wrap' className='flex transparent'>
+          <Sidebar/>
+          <Content/>
       </div>
     </>
   )
