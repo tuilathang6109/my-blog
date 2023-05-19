@@ -14,15 +14,15 @@ function RightSide () {
     return (
         <>
             <div className="right-side w-4/5 md:w-full sm:w-full s:w-full text-center xl:ml-auto lg:ml-auto ">
-                    <Home />
-                    <About />
-                    <Services />    
-                    <Skill />
-                    <Education />
-                    <Experience />
-                    <Work />
-                    <Blog />
-                    <Contact/>
+                <Home />
+                <About />
+                <Services />    
+                <Skill />
+                <Education />
+                <Experience />
+                <Work />
+                <Blog />
+                <Contact/>
             </div>
         </>
     )
