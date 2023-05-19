@@ -34,8 +34,9 @@ function Sidebar () {
 
             {/* Sidebar---------------- */}
             <div 
-            className={`sidebar ${!isSidebarVisible ? `sm:hidden s:hidden md:hidden` : ''}`}
+                className={`sidebar ${!isSidebarVisible ? `sm:hidden s:hidden md:hidden` : ''}`}
             >
+                
                 <Profile/>
 
             <ul className="navbar ">
