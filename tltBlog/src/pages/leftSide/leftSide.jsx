@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 
 import {AiOutlineMenu, AiOutlineClose} from 'react-icons/ai';
@@ -35,7 +34,7 @@ function LeftSide () {
         >
                 <Profile/>
                 <ul className="navbar ">
-                <NavBar className="navbar" toggleLeftSide={toggleLeftSide}/>
+                <NavBar toggleLeftSide={toggleLeftSide}/>
                 </ul>
                 <Footer/>
             </div>

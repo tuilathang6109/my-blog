@@ -1,6 +1,6 @@
 const Blog = ()=>{
     return (
-        <div id="services" className="h-[500px]">
+        <div id="blog" className="h-[500px]">
             Blog
        </div>         
 
