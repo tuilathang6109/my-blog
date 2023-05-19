@@ -2,7 +2,7 @@
 function RightSide () { 
     return (
         <>
-        <div className="right-side w-4/5 text-center z-0">
+        <div className="right-side w-4/5 md:w-full sm:w-full s:w-full text-center xl:ml-auto lg:ml-auto ">
             <div id="home" className="h-[500px]">
              home
             </div>
