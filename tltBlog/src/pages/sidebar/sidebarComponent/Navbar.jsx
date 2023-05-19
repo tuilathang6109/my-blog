@@ -15,10 +15,10 @@ const items = [
   { label: 'contact', icon: <AiOutlineContacts /> },
 ];
 
-function NavItems({ item, toggleLeftSide, activeItem, setActiveItem }) {
+function NavItems({ item, toggleSidebar, activeItem, setActiveItem }) {
   const handleClick = () => {
     setActiveItem(item.label);
-    toggleLeftSide();
+    toggleSidebar();
   };
 
   const isActive = activeItem === item.label;
@@ -39,7 +39,7 @@ function NavItems({ item, toggleLeftSide, activeItem, setActiveItem }) {
   );
 }
 
-function NavBar({ toggleLeftSide }) {
+function NavBar({ toggleSidebar }) {
   const [activeItem, setActiveItem] = useState('');
 
   return (
@@ -48,7 +48,7 @@ function NavBar({ toggleLeftSide }) {
         <NavItems
           item={item}
           key={index}
-          toggleLeftSide={toggleLeftSide}
+          toggleSidebar={toggleSidebar}
           activeItem={activeItem}
           setActiveItem={setActiveItem}
         />

@@ -5,23 +5,3 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-@layer utilities {
-    .navHover:hover {
-     border-bottom-width: 2px;
-     transform: scaleX(1.25) scaleY(1.25);
-     transition-property: all;
-     transition-duration: 300ms;
-     transition-timing-function: ease-in-out;
-     font-weight: 800;
-   }
-   .leftSide {
-     display: flex;
-     flex-direction: column; 
-     height: 100%;
-     align-items: center;
-     background-color: var(--BgGrey);
-     padding-top: 11px;
-   }
- }
- 

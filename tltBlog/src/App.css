@@ -7,21 +7,21 @@
     }
 } ;
 
-/*left side */
+/*SIDEBAR */
 @layer components {
     .hover:hover {
       @apply scale-x-125 scale-y-125 transition-all duration-300 ease-in-out font-extrabold ;
     }
 
-/* LEFT SIDE------------------ */
+/* SIDEBAR------------------ */
     .iconMenu {
       @apply mt-5 ml-5 fixed cursor-pointer text-[48px]  z-20  transparent
     }
     .iconClosse {
       @apply mt-5 ml-5 cursor-pointer text-[48px]  absolute z-20  transparent
     }
-    .left-side {
-      @apply flex flex-col overflow-auto fixed xl:w-1/5 lg:w-1/5 w-full top-0 h-full items-center bg-BgGrey md:w-full sm:w-full s:w-full transparent 
+    .sidebar {
+      @apply flex flex-col overflow-auto fixed xl:w-1/5 lg:w-1/5 w-full top-0 h-full items-center bg-BgGrey md:w-full sm:w-full s:w-full
     }
 /* PROFILE----------- */
     .profile {
@@ -51,7 +51,9 @@
       @apply text-blue-700 underline
     }
 }
-/* right side */
+/*CONTENT-------------------------------- */
+
+
 
 @layer components {
   
