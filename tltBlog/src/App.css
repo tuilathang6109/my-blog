@@ -15,10 +15,10 @@
 
 /* LEFT SIDE------------------ */
     .iconMenu {
-      @apply cursor-pointer text-[48px]  absolute z-20  transparent
+      @apply mt-5 ml-5 fixed cursor-pointer text-[48px]  z-20  transparent
     }
     .iconClosse {
-      @apply cursor-pointer text-[48px]  absolute z-20  transparent
+      @apply mt-5 ml-5 cursor-pointer text-[48px]  absolute z-20  transparent
     }
     .left-side {
       @apply flex flex-col overflow-auto fixed xl:w-1/5 lg:w-1/5 w-full top-0 h-full items-center bg-BgGrey md:w-full sm:w-full s:w-full transparent 
@@ -34,7 +34,7 @@
         @apply font-Kanit mb-3 text-xl font-bold;
       }
       .profileSologan{
-        @apply italic text-sm;
+        @apply italic text-sm text-blue-400;
       }
 /* NABVIGATION BAR-------  */
     .navbar {

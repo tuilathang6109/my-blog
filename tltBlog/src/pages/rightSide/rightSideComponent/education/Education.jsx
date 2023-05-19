@@ -1,7 +1,7 @@
 const Education = ()=>{
     return (
-        <div id="services" className="h-[500px]">
-        Home
+        <div id="education" className="h-[500px]">
+        education
        </div>         
 
     )
