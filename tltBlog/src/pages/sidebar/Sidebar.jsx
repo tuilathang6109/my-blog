@@ -1,3 +1,5 @@
+import React from 'react';
+import ReactDOM from 'react-dom';
 import { useState } from 'react';
 
 import {AiOutlineMenu, AiOutlineClose} from 'react-icons/ai';
@@ -17,15 +19,15 @@ function Sidebar () {
         <>
             {/* Menu Icon------------- */}
             <i
-                id="iconMenu"
-                className={`iconMenu xl:hidden lg:hidden ${isSidebarVisible ? 'hidden' : ''}`}
+                
+                className={`iconMenu  xl:hidden lg:hidden ${isSidebarVisible ? 'hidden' : ''}`}
                 onClick={toggleSidebar} 
             >
                 <AiOutlineMenu/>
             </i>
             {/* Close Icon------------ */}
             <i
-                id="iconClose"
+                
                 className={`iconClosse xl:hidden lg:hidden ${!isSidebarVisible ? 'hidden' :''}`}
                 onClick={toggleSidebar}
             >
@@ -34,15 +36,13 @@ function Sidebar () {
 
             {/* Sidebar---------------- */}
             <div 
-                className={`sidebar ${!isSidebarVisible ? `sm:hidden s:hidden md:hidden` : ''}`}
+                className={`sidebar shrink ${!isSidebarVisible ? `sm:hidden s:hidden md:hidden` : ''}`}
             >
-                
+
                 <Profile/>
 
-            <ul className="navbar ">
                 <NavBar toggleSidebar={toggleSidebar}/>
-            </ul>
-                
+           
                 <Footer/>
             </div>
         </>

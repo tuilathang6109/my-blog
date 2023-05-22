@@ -43,7 +43,7 @@ function NavBar({ toggleSidebar }) {
   const [activeItem, setActiveItem] = useState('');
 
   return (
-    <ul className="flex flex-col">
+    <ul className="navbar flex flex-col ">
       {items.map((item, index) => (
         <NavItems
           item={item}

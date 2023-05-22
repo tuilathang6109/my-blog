@@ -1,19 +1,19 @@
 
 
-import Home from "./rightSideComponent/home/Home";
-import About from "./rightSideComponent/about/About";
-import Services from "./rightSideComponent/services/Services";
-import Skill from "./rightSideComponent/skills/Skill";
-import Education from "./rightSideComponent/education/Education";
-import Experience from "./rightSideComponent/experience/Experience";
-import Work from "./rightSideComponent/work/Work";
-import Blog from "./rightSideComponent/blog/Blog";
-import Contact from "./rightSideComponent/contact/Contact"
+import Home from "./contentComponent/home/Home";
+import About from "./contentComponent/about/About";
+import Services from "./contentComponent/services/Services";
+import Skill from "./contentComponent/skills/Skill";
+import Education from "./contentComponent/education/Education";
+import Experience from "./contentComponent/experience/Experience";
+import Work from "./contentComponent/work/Work";
+import Blog from "./contentComponent/blog/Blog";
+import Contact from "./contentComponent/contact/Contact"
 
 function RightSide () { 
     return (
         <>
-            <div className="right-side w-4/5 md:w-full sm:w-full s:w-full text-center xl:ml-auto lg:ml-auto ">
+            <div className="flex flex-col right-side w-4/5 md:w-full sm:w-full s:w-full text-center xl:ml-auto lg:ml-auto ">
                 <Home />
                 <About />
                 <Services />    

@@ -23,7 +23,7 @@ export default {
         textBlack :'rgba(0, 0, 0, 0.7);'
       },
       keyframes: {
-        slideIn: {
+        slideInX: {
           '0%': {
             transform: 'translateX(-100%)',
           },
@@ -31,19 +31,34 @@ export default {
             transform: 'translateX(0)',
           },
         },
-        slideOut: {
+        slideOutX: {
           '0%': {
             transform: 'translateX(0)',
           },
           '100%': {
             transform: 'translateX(-100%)',
+          },
+        },
+        slideInY: {
+          '0%': {
+            transform: 'translateY(-100%)',
+            opacity : 0,
+          },
+          '100%': {
+            transform: 'translateY(0)',
+            opacity : 1,
           },
         },
       },
       animation: {
         slideIn: 'slideIn 0.7s ease-in',
         slideOut: 'slideOut 0.7s ease-out',
+        slideInY: 'slideInOut 0.7s ease-in',
       },
+      backgroundImage: {
+        'bgHome-1': "url('./images/BG-Home-2.jpg')",
+        'bgHome-2': "url('./images/BG-Home-3.jpg')",
+      }
     },
   },
   plugins: [
