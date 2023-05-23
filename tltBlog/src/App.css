@@ -15,13 +15,13 @@
 
 /* SIDEBAR------------------ */
     .iconMenu {
-      @apply mt-5 ml-5 fixed cursor-pointer text-[48px]  z-20  transparent
+      @apply mt-5 ml-5 fixed cursor-pointer text-[48px]  z-50  transparent
     }
     .iconClosse {
-      @apply mt-5 ml-5 cursor-pointer text-[48px]  absolute z-20  transparent
+      @apply mt-5 ml-5 cursor-pointer text-[48px]  absolute z-50  transparent
     }
     .sidebar {
-      @apply flex flex-col overflow-auto fixed xl:w-1/5 lg:w-1/5 w-full top-0 h-full items-center bg-BgGrey md:w-full sm:w-full s:w-full
+      @apply z-40 flex flex-col overflow-auto fixed xl:w-1/5 lg:w-1/5 w-full top-0 h-full items-center bg-BgGrey md:w-full sm:w-full s:w-full
     }
 /* PROFILE----------- */
     .profile {
@@ -54,6 +54,96 @@
 /*CONTENT-------------------------------- */
 
 /*HOME------------------*/
+ .homepage {
+  @apply font-Kanit -z-10
+ }
+ .slider{
+  @apply  bg-center bg-no-repeat bg-bgHome-2 lg:bg-none md:bg-none sm:bg-none s:bg-none
+ }
+ .slider-item-1 {
+  @apply inline-block text-left font-extrabold 
+ }
+ .responsive-item-1 {
+  @apply absolute
+    xl:top-[10%]
+    xl:right-[5%]
+
+    lg:top-[30%]
+    lg:right-[30%]
+
+    md:top-[30%]
+    md:right-[30%]
+
+    sm:top-[30%]
+    sm:right-[30%]
+
+    s:top-[30%]
+    s:right-[30%];
+ }
+
+ .slider-item-2 {
+  @apply inline-block text-left font-extrabold
+ }
+.responsive-item-2 {
+  @apply absolute 
+    xl:top-[10%] 
+    lg:top-[30%]
+    lg:right-[30%] 
+    md:top-[30%] 
+    sm:top-[30%] 
+    s:top-[30%] 
+    right-[5%]
+}
+
+
+
+
+/*ANIMATION*/
+ .slider {
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.slider-item {
+  opacity: 0;
+  visibility: hidden;
+  animation: fade-in 8s infinite;
+}
+
+.slider-item.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.slider-item:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.slider-item:nth-child(2) {
+  animation-delay: 4s;
+}
+
+@keyframes fade-in {
+  0%, 100% {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(100%); 
+  }
+  50% {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0%); 
+  }
+}
+
+
+
+
+
+
+
+
 
 @layer components {
   
@@ -64,3 +154,5 @@
     -webkit-tap-highlight-color: transparent;
   }
 }
+
+
