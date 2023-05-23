@@ -65,20 +65,11 @@
  }
  .responsive-item-1 {
   @apply absolute
-    xl:top-[10%]
-    xl:right-[5%]
-
-    lg:top-[30%]
-    lg:right-[30%]
-
-    md:top-[30%]
-    md:right-[30%]
-
-    sm:top-[30%]
-    sm:right-[30%]
-
-    s:top-[30%]
-    s:right-[30%];
+    xl:top-[10%] xl:left-[5%]
+    lg:top-[30%] lg:left-[30%]
+    md:top-[30%] md:left-[30%]
+    sm:top-[30%] sm:left-[30%]
+    s:top-[30%] s:left-[30%];
  }
 
  .slider-item-2 {
@@ -86,13 +77,11 @@
  }
 .responsive-item-2 {
   @apply absolute 
-    xl:top-[10%] 
-    lg:top-[30%]
-    lg:right-[30%] 
-    md:top-[30%] 
-    sm:top-[30%] 
-    s:top-[30%] 
-    right-[5%]
+    xl:top-[10%] xl:right-[5%]
+    lg:top-[30%] lg:right-[15%]  
+    md:top-[30%] md:right-[15%]
+    sm:top-[30%] sm:right-[15%]
+    s:top-[30%] s:right-[15%]
 }
 
 
