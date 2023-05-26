@@ -9,7 +9,7 @@ const Home = ()=>{
       <div className="slider">
         <div className="slider-item-1 responsive-item-1 slider-item"> 
           <p 
-            className="text-[37px] font-extrabold"
+            className="text-[37px] xl:text-[67px] font-extrabold"
           >
             Hi ! 
             <br />
@@ -27,7 +27,7 @@ const Home = ()=>{
 
         <div className="slider-item-2 responsive-item-2 slider-item"> 
           <p 
-            className="text-[37px] font-extrabold"
+            className="text-[37px] xl:text-[67px] font-extrabold"
           >
             I am a
             <br />

@@ -15,10 +15,10 @@
 
 /* SIDEBAR------------------ */
     .iconMenu {
-      @apply mt-5 ml-5 fixed cursor-pointer text-[48px]  z-50  transparent
+      @apply mt-5 ml-5 fixed cursor-pointer text-[48px]   z-50  transparent
     }
     .iconClosse {
-      @apply mt-5 ml-5 cursor-pointer text-[48px]  absolute z-50  transparent
+      @apply mt-5 ml-5 fixed cursor-pointer text-[48px]   z-50  transparent
     }
     .sidebar {
       @apply z-40 flex flex-col overflow-auto fixed xl:w-1/5 lg:w-1/5 w-full top-0 h-full items-center bg-BgGrey md:w-full sm:w-full s:w-full
@@ -58,26 +58,30 @@
   @apply font-Kanit -z-10
  }
  .slider{
-  @apply  bg-center bg-no-repeat bg-bgHome-2 lg:bg-none md:bg-none sm:bg-none s:bg-none
+  @apply  lg:bg-none md:bg-none sm:bg-none s:bg-none
  }
  .slider-item-1 {
   @apply inline-block text-left font-extrabold 
  }
  .responsive-item-1 {
   @apply absolute
-    xl:top-[10%] xl:left-[5%]
+    xl:top-[30%] xl:left-[40%]
     lg:top-[30%] lg:left-[30%]
     md:top-[30%] md:left-[30%]
     sm:top-[30%] sm:left-[30%]
     s:top-[30%] s:left-[30%];
  }
 
+ /*ABOUT-----------*/
+
+ 
+
  .slider-item-2 {
   @apply inline-block text-left font-extrabold
  }
 .responsive-item-2 {
   @apply absolute 
-    xl:top-[10%] xl:right-[5%]
+    xl:top-[30%] xl:left-[40%]
     lg:top-[30%] lg:right-[15%]  
     md:top-[30%] md:right-[15%]
     sm:top-[30%] sm:right-[15%]
@@ -88,6 +92,19 @@
 
 
 /*ANIMATION*/
+
+.about-shapes-item1{
+  animation: side-In 1s ease-in;
+}
+.about-shapes-item2{
+  animation: side-In 1.3s ease-in;
+}
+.about-shapes-item3{
+  animation: side-In 1.6s ease-in;
+}
+.about-shapes-item4{
+  animation: side-In 1.9s ease-in;
+}
  .slider {
   height: 100vh;
   position: relative;
@@ -125,7 +142,18 @@
     transform: translateY(0%); 
   }
 }
-
+@keyframes side-In{
+  0% {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-100%); 
+  }
+  100% {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0%); 
+  }
+}
 
 
 
