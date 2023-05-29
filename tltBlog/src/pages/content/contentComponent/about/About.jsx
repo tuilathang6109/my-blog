@@ -3,14 +3,13 @@ import { TfiPalette , TfiWorld , TfiSettings, TfiDesktop } from "react-icons/tfi
 
 const About = ()=>{
     return (
-        <div id="about" className="p-9 font-Kanit">
+        <div id="about" className="p-9 font-Kanit ">
             <div className="about-text text-left"> 
-                <div className=" text-[15px] opacity-50 mb-[15px] uppercase"> a b o u t <span className="pl-2">m e</span></div>
+                <div className=" text-[15px] opacity-50 mb-[15px] uppercase tracking-6"> about me</div>
 
-                <div className="text-[20px] font-bold font-PlayfairDisplay mb-[72px]">WHO AM I ?</div>
+                <div className="text-[20px] font-bold font-PlayfairDisplay mb-[72px] tracking-6">WHO AM I ?</div>
 
                 <div className="text-[16px] opacity-70 leading-10">
-
                     <p className="italic">
                         Hello there!
                     </p>
@@ -35,36 +34,32 @@ const About = ()=>{
                     </p>
                 </div>
             <div className="about-shapes xl:flex xl:center mt-16 ">
-                <div className="about-shapes-item1 rounded-lg hover cursor-pointer xl:w-[25%] xl:px-[5%] lg:w-full md:w-full sm:w-full s:w-full md:mb-[30px] sm:mb-[30px] s:mb-[30px] ">
+                <div className="about-shapes-item1 cursor-pointer xl:w-[25%] xl:px-[5%] lg:w-full md:w-full sm:w-full s:w-full md:mb-[30px] sm:mb-[30px] s:mb-[30px] ">
                     <div className="px-5 border-b-2 rounded-lg  shadow-xl border-blue-500">
                         <i className="text-[26px] text-blue-500"><TfiPalette className="mt-[20px]"/></i>
                         <p className="mt-[60px] mb-[50px] w-[177px] opacity-80">Graphic Design</p>
                     </div>  
                 </div>
-                <div className="about-shapes-item2 hover cursor-pointer xl:w-[25%] xl:px-[5%] lg:w-full md:w-full sm:w-full s:w-full md:mb-[30px] sm:mb-[30px] s:mb-[30px]">
+                <div className="about-shapes-item2 cursor-pointer xl:w-[25%] xl:px-[5%] lg:w-full md:w-full sm:w-full s:w-full md:mb-[30px] sm:mb-[30px] s:mb-[30px]">
                     <div className="px-5 border-b-2 rounded-lg  shadow-xl border-red-500">
                         <i className="text-[26px] text-red-500"><TfiWorld className="mt-[20px]"/></i>
                         <p className="mt-[60px] mb-[50px] w-[177px] opacity-80 ">Web Design</p>
                     </div>  
                 </div>
-                <div className="about-shapes-item3 rounded-lg hover cursor-pointer xl:w-[25%] xl:px-[5%] lg:w-full md:w-full sm:w-full s:w-full md:mb-[30px] sm:mb-[30px] s:mb-[30px]">
+                <div className="about-shapes-item3 cursor-pointer xl:w-[25%] xl:px-[5%] lg:w-full md:w-full sm:w-full s:w-full md:mb-[30px] sm:mb-[30px] s:mb-[30px]">
                     <div className="px-5 border-b-2 rounded-lg  shadow-xl border-yellow-500">
                         <i className="text-[26px] text-yellow-500"><TfiDesktop className="mt-[20px]"/></i>
                         <p className="mt-[60px] mb-[50px] w-[177px] opacity-80">Software</p>
                     </div>  
                 </div>
-                <div className="about-shapes-item4 rounded-lg hover cursor-pointer xl:w-[25%] xl:px-[5%] lg:w-full md:w-full sm:w-full s:w-full md:mb-[30px] sm:mb-[30px] s:mb-[30px]">
+                <div className="about-shapes-item4 cursor-pointer xl:w-[25%] xl:px-[5%] lg:w-full md:w-full sm:w-full s:w-full md:mb-[30px] sm:mb-[30px] s:mb-[30px]">
                     <div className="px-5 border-b-2 rounded-lg  shadow-xl border-purple-500">
                         <i className="text-[26px] text-purple-500"><TfiSettings className="mt-[20px]"/></i>
                         <p className="mt-[60px] mb-[50px] w-[177px] opacity-80">Hardware</p>
                     </div>  
                 </div>
                 
-                
-                
             </div>
-
-
             </div>
          </div>
     )

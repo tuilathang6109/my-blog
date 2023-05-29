@@ -1,12 +1,11 @@
 import React, { useState } from 'react';
-import { AiOutlineHome, AiOutlineExclamationCircle, AiOutlineCustomerService, AiOutlineCheckCircle, AiOutlineHourglass, AiOutlineLaptop, AiOutlineContacts } from 'react-icons/ai';
+import { AiOutlineHome, AiOutlineExclamationCircle, AiOutlineCheckCircle, AiOutlineHourglass, AiOutlineLaptop, AiOutlineContacts } from 'react-icons/ai';
 import { MdCastForEducation } from 'react-icons/md';
 import { TbBrandBlogger } from 'react-icons/tb';
 
 const items = [
   { label: 'home', icon: <AiOutlineHome /> },
   { label: 'about', icon: <AiOutlineExclamationCircle /> },
-  { label: 'services', icon: <AiOutlineCustomerService /> },
   { label: 'skills', icon: <AiOutlineCheckCircle /> },
   { label: 'education', icon: <MdCastForEducation /> },
   { label: 'experience', icon: <AiOutlineHourglass /> },
