@@ -2,7 +2,6 @@
 
 import Home from "./contentComponent/home/Home";
 import About from "./contentComponent/about/About";
-import Services from "./contentComponent/services/Services";
 import Skill from "./contentComponent/skills/Skill";
 import Education from "./contentComponent/education/Education";
 import Experience from "./contentComponent/experience/Experience";
@@ -15,8 +14,7 @@ function RightSide () {
         <>
             <div className="flex flex-col right-side w-4/5 md:w-full sm:w-full s:w-full text-center xl:ml-auto lg:ml-auto ">
                 <Home />
-                <About />
-                <Services />    
+                <About />   
                 <Skill />
                 <Education />
                 <Experience />

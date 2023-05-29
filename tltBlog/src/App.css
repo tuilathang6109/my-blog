@@ -73,6 +73,42 @@
  }
 
  /*ABOUT-----------*/
+.about-text {
+  animation : side-In-x 1s ease-in; 
+  animation-fill-mode: forwards;
+  animation-delay: 0.5s; 
+}
+ 
+
+/*SERVICES*/
+
+.services-shapes-traingle-up {
+    top: -30px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 50px 30px 50px;
+    border-color: transparent transparent #2c98f0 transparent;
+}
+.services-shapes-traingle-down {
+    bottom: -30px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 30px 50px 0 50px;
+    border-color: #2c98f0 transparent transparent transparent;
+}
+.services-shapes-bettwen {
+  width : 100px ;
+  height: 50px ;
+  backGround-color: #2c98f0;
+}
+
+
+
+
+
+
 
  
 
@@ -90,20 +126,27 @@
 
 
 
-
 /*ANIMATION*/
 
 .about-shapes-item1{
   animation: side-In 1s ease-in;
+  animation-fill-mode: forwards;
+  animation-delay: 0.5s;
 }
 .about-shapes-item2{
   animation: side-In 1.3s ease-in;
+  animation-fill-mode: forwards;
+  animation-delay: 0.5s;
 }
 .about-shapes-item3{
   animation: side-In 1.6s ease-in;
+  animation-fill-mode: forwards;
+  animation-delay: 0.5s;
 }
 .about-shapes-item4{
   animation: side-In 1.9s ease-in;
+  animation-fill-mode: forwards;
+  animation-delay: 0.5s;
 }
  .slider {
   height: 100vh;
@@ -114,7 +157,7 @@
 .slider-item {
   opacity: 0;
   visibility: hidden;
-  animation: fade-in 8s infinite;
+  animation: fade-in-y 8s infinite;
 }
 
 .slider-item.active {
@@ -130,7 +173,7 @@
   animation-delay: 4s;
 }
 
-@keyframes fade-in {
+@keyframes fade-in-y {
   0%, 100% {
     opacity: 0;
     visibility: hidden;
@@ -142,6 +185,7 @@
     transform: translateY(0%); 
   }
 }
+
 @keyframes side-In{
   0% {
     opacity: 0;
@@ -154,7 +198,16 @@
     transform: translateY(0%); 
   }
 }
-
+@keyframes side-In-x{
+  0% {
+    visibility: hidden;
+    transform: translateX(-100%); 
+  }
+  100% {
+    visibility: visible;
+    transform: translatex(0%); 
+  }
+}
 
 
 

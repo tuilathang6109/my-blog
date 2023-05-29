@@ -25,7 +25,12 @@ export default {
       backgroundImage: {
         'bgHome-1': "url('./images/BG-Home-2.jpg')",
         'bgHome-2': "url('./images/BG-Home-3.jpg')",
-      }
+      },
+      letterSpacing: {
+        '2': '2px',
+        '4': '4px',
+        '6': '6px',
+      },
     },
   },
   plugins: [
