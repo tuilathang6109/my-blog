@@ -31,7 +31,14 @@ export default {
         '4': '4px',
         '6': '6px',
       },
+      transitionProperty: {
+        'height': 'height'
+      }
+      
     },
+    variants: {
+      height: ['responsive', 'hover', 'focus']
+    }
   },
   plugins: [
 ],
