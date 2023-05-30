@@ -20,7 +20,7 @@ function Sidebar () {
             {/* Menu Icon------------- */}
             <i
                 
-                className={`iconMenu  xl:hidden lg:hidden ${isSidebarVisible ? 'hidden' : ''}`}
+                className={`iconMenu xl:hidden lg:hidden ${isSidebarVisible ? 'hidden' :''}`}
                 onClick={toggleSidebar} 
             >
                 <AiOutlineMenu/>
