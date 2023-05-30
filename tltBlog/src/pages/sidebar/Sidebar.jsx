@@ -36,7 +36,7 @@ function Sidebar () {
 
             {/* Sidebar---------------- */}
             <div 
-                className={`sidebar shrink ${!isSidebarVisible ? `sm:hidden s:hidden md:hidden` : ''}`}
+                className={`sidebar shrink ${!isSidebarVisible ? `md:w-0 sm:w-0 s:w-0 transition-all overflow-hidden ` : 'md:w-full sm:w-full s:w-full transition-all sm:overflow-hidden s:overflow-hidden md:overflow-hidden'}`}
             >
 
                 <Profile/>
