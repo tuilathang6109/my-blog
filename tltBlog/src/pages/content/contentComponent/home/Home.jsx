@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+
 import vnLocation from '../../../../images/vietnamLocation.png';
 import checkIcon from '../../../../images/iconCheck.png';
 
@@ -22,8 +23,7 @@ const Silider2 = () => {
     <div className="inline-block text-left font-extrabold">
       <p className="text-[37px] xl:text-[67px] font-extrabold">
         I am a <br />
-        Web <br />
-        Devoloper
+        Web Devoloper
       </p>
       <div className="inline-block italic first-letter:italic text-red-500">
         From VietNam
@@ -34,11 +34,11 @@ const Silider2 = () => {
 };
 
 const Home = () => {
-  const [showSlider1, setShowSlider1] = useState(true);
+  const [showSlider, setShowSlider] = useState(true);
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setShowSlider1((prevShowSlider1) => !prevShowSlider1);
+      setShowSlider((prevShowSlider) => !prevShowSlider);
     }, 3000);
 
     return () => {
@@ -49,8 +49,13 @@ const Home = () => {
   return (
     <div id="home" className="homepage font-Kanit">
       <div className="h-screen flex items-center justify-center">
-        <div className="h-56 w-80 md:h-96 md:w-96 relative">
-          {showSlider1 ? <Silider1/> : <Silider2 />}
+        <div className="h-56 w-80 md:h-96 md:w-96 relative flex items-center justify-center">
+          <div className={`mx-auto transition-all duration-500 absolute ${showSlider ? "opacity-100 visible" : "opacity-0 visible" }`}>
+            <Silider1/> 
+          </div> 
+          <div className={`mx-auto transition-all duration-500 absolute ${!showSlider ? "opacity-100 visible" : "opacity-0 visible" }`}>
+            <Silider2/> 
+          </div>  
         </div>
       </div>
     </div>

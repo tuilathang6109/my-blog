@@ -53,6 +53,26 @@
 }
 /*CONTENT-------------------------------- */
 
+.right-side {
+  transition: transform 0.5s ease-in-out;
+}
+
+.right-side.slide-enter {
+  transform: translateX(100%);
+}
+
+.right-side.slide-enter-active {
+  transform: translateX(0%);
+}
+
+.right-side.slide-exit {
+  transform: translateX(0%);
+}
+
+.right-side.slide-exit-active {
+  transform: translateX(-100%);
+}
+
 /*HOME------------------*/
 
  /*ABOUT-----------*/
