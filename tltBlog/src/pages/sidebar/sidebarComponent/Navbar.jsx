@@ -24,7 +24,7 @@ function NavItems({ item, toggleSidebar, activeItem, setActiveItem }) {
 
   return (
     <li
-      className={`navbarItems hover ${isActive ? 'active' : ''}`}
+      className={`navbarItems flex flex-col hover ${isActive ? 'active' : ''}`}
       onClick={handleClick}
     >
       <a
@@ -34,6 +34,7 @@ function NavItems({ item, toggleSidebar, activeItem, setActiveItem }) {
           {item.label}
           <i className={`ml-1 ${isActive ? 'text-blue-500 scale-125' : ''}`}>{item.icon}</i>
       </a>
+      <span className='h-[2px] w-0 overflow-hidden hover:bg-gray-400 transition-all duration-500 hover:w-[100%]'> </span>
     </li>
   );
 }

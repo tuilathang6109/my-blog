@@ -1,37 +1,37 @@
-
+import React, { useState } from 'react';
 
 const dataItems = [
     {   
         key : 1,
-        name: 'Full Stack Developer', 
+        name: 'My Experience', 
         startYear : 2017 , endYear : 2018 , 
         color : 'blue',
         description : "Tolerably earnestly middleton extremely distrusts she boy now not. Add and offered prepare how cordial two promise. Greatly who affixed suppose but enquire compact prepare all put. Added forth chief trees but rooms think may."
     },
     {   
         key : 2,
-        name: 'Full Stack Developer', 
+        name: 'My Experience', 
         startYear : 2017 , endYear : 2018 ,
         color : 'red',
         description : "Tolerably earnestly middleton extremely distrusts she boy now not. Add and offered prepare how cordial two promise. Greatly who affixed suppose but enquire compact prepare all put. Added forth chief trees but rooms think may."  
     },
     {   
         key : 3,
-        name: 'Full Stack Developer', 
+        name: 'My Experience', 
         startYear : 2017 , endYear : 2018 , 
         color : 'orange',
         description : "Tolerably earnestly middleton extremely distrusts she boy now not. Add and offered prepare how cordial two promise. Greatly who affixed suppose but enquire compact prepare all put. Added forth chief trees but rooms think may."  
     },
     {   
         key : 4,
-        name: 'Full Stack Developer', 
+        name: 'My Experience', 
         startYear : 2017 , endYear : 2018 , 
         color : 'purple',
         description : "Tolerably earnestly middleton extremely distrusts she boy now not. Add and offered prepare how cordial two promise. Greatly who affixed suppose but enquire compact prepare all put. Added forth chief trees but rooms think may."  
     },
     {   
         key : 5,
-        name: 'Full Stack Developer', 
+        name: 'My Experience', 
         startYear : 2017 , endYear : 2018 , 
         color : 'green',
         description : "Tolerably earnestly middleton extremely distrusts she boy now not. Add and offered prepare how cordial two promise. Greatly who affixed suppose but enquire compact prepare all put. Added forth chief trees but rooms think may."  
@@ -39,10 +39,20 @@ const dataItems = [
   ];
 
 function ExItems({item}) {
+    const [isExpanded, setIsExpanded] = useState ([false, false, false , false, false])
+    const togglePanel = (index) => {
+        const expanded = [...isExpanded];
+        expanded[index] = !expanded[index];
+        setIsExpanded(expanded);
+    } 
+    
     return (
         <li className="flex cursor-pointer">
                 <div className="h-[200px] w-[50px]">
-                    <div className="flex justify-center ">
+                    <div 
+                    className="flex justify-center "
+                    onClick={() => togglePanel(0)}
+                    >
                         <div className={`h-[40px] w-[40px] bg-${item.color}-500 rounded-full border-4 border-gray-200 hover:border-[6px] hover:opacity-80 shadow-lg`}></div>
                     </div>
 
@@ -51,7 +61,7 @@ function ExItems({item}) {
                     </div>
                 </div>
 
-                <div className="h-[200px] w-full flex relative">
+                <div className={` flex relative transition-all overflow-hidden duration-500 ${isExpanded[0] ? "w-0 h-0" : "w-full h-[200px]"}`}>
                     <div class="w-0 h-0 absolute top-3
                         border-t-[10px] border-t-transparent
                         border-r-[15px] border-r-BgGrey
@@ -62,7 +72,7 @@ function ExItems({item}) {
                         <div className="px-[22.5px] pt-[22.5px] pb-[20px] ">
                             <div className="flex mb-[20px] font-Kanit ">
                                 <div className="text-xl font-medium ">{item.name}</div>
-                                <div className="ml-[15px] mt-[2px] opacity-80">{item.startYear} {"-"} {item.endYear} </div>
+                                <div className="ml-[15px] mt-[2px] opacity-80">{item.startYear} {"-"}{item.endYear}</div>
                             </div>
                             <div className="text-justify font-light font-Kanit text-[15px]">
                                 {item.description}

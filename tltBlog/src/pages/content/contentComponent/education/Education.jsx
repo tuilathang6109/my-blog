@@ -30,7 +30,7 @@ const dataItems = [
     <li className=" text-left ">
         <div
             className={`panel-header shadow-lg flex justify-between w-full px-[20px] 
-             ${isExpanded[0] ? "bg-blue-400 transition-all overflow-hidden text-white" : "bg-BgGrey transition overflow"}`}
+             ${isExpanded[0] ? "bg-blue-400 transition-all overflow-hidden text-white" : "bg-gray-200 transition overflow"}`}
             onClick={() => togglePanel(0)}
         >
             <h3 className="panel-titlepx-[25px] py-[20px] ">{item.name}</h3>
@@ -59,7 +59,7 @@ function EduList() {
 }
 const Education = () => {
   return (
-    <div id="education" className="p-9">
+    <div id="education" className="p-9 bg-BgGrey">
         <div className="education-text text-left">
             <div className="text-[15px] opacity-50 mb-[15px] uppercase tracking-6"> EDUCATION</div>
             <div className="text-[20px] font-bold font-PlayfairDisplay mb-[72px] tracking-6">EDUCATION</div>
