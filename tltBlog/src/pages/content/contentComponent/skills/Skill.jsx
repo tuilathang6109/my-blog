@@ -1,6 +1,6 @@
 const Skills = ()=>{
     return (
-        <div id="skills" className="p-9 font-Kanit bg-BgGrey">
+        <div id="skills" className="p-9 font-Kanit">
             <div className="skill-text text-left"> 
                 <div className=" text-[15px] opacity-50 mb-[15px] uppercase tracking-6"> MY SPECIALTY</div>
 

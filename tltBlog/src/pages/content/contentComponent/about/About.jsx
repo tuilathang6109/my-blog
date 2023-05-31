@@ -3,7 +3,7 @@ import { TfiPalette , TfiWorld , TfiSettings, TfiDesktop } from "react-icons/tfi
 
 const About = ()=>{
     return (
-        <div id="about" className="p-9 font-Kanit ">
+        <div id="about" className="p-9 font-Kanit bg-BgGrey">
             <div className="about-text text-left"> 
                 <div className=" text-[15px] opacity-50 mb-[15px] uppercase tracking-6"> about me</div>
 
