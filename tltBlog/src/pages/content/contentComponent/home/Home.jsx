@@ -22,8 +22,8 @@ const Silider2 = () => {
   return (
     <div className="inline-block text-left font-extrabold">
       <p className="text-[37px] xl:text-[67px] font-extrabold">
-        I am a <br />
-        Web Devoloper
+        I am <br />
+        a Web Devoloper
       </p>
       <div className="inline-block italic first-letter:italic text-red-500">
         From VietNam
