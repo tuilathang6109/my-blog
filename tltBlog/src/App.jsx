@@ -9,8 +9,6 @@ function App() {
       <div id='wrap' className='flex transparent'>
           <Sidebar/>
           <Content/>
-          <Content/>
-
       </div>
     </>
   )
