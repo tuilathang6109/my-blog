@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       function randomEvenNumber() {
+  let randomNumber;
+  do {
+    randomNumber = Math.floor(Math.random() * 60); // Tạo một số nguyên ngẫu nhiên từ 0 đến 79
+  } while (randomNumber % 2 !== 0); // Lặp lại cho đến khi số ngẫu nhiên là số chẵn
+
+    return randomNumber;
+    }
+
+// Sử dụng hàm để tạo một số ngẫu nhiên
+    let random = randomEvenNumber();
+    console.log(random);
+
+
+    </script>
+</body>
+</html>
